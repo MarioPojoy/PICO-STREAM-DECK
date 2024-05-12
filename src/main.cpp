@@ -17,7 +17,7 @@ void setup() {
   pinMode(buttonPin4, INPUT_PULLUP);
 
   #if defined (ARDUINO_RASPBERRY_PI_PICO_W)
-    KeyboardBLE.begin(BLE_DEVICE_NAME);
+    KeyboardBLE.begin(BLE_DEVICE_NAME, BLE_DEVICE_NAME, KeyboardLayout_es_ES);
   #else
     Keyboard.begin(KeyboardLayout_es_ES);
   #endif
